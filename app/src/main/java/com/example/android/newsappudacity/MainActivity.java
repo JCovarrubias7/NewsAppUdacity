@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity
      * URL for earthquake data from the USGS dataset
      */
     private static final String GUARDIAN_REQUEST_URL =
-            "https://content.guardianapis.com/search?q=NFL&from-date=2018-01-01&show-tags=contributor&api-key=test";
+            "https://content.guardianapis.com/search?q=NFL&from-date=2018-01-01&show-fields=all&api-key=test";
 
     /**
      * Constant value for the earthquake loader ID. We can choose any integer.
