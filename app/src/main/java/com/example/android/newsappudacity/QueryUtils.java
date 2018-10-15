@@ -172,16 +172,11 @@ public final class QueryUtils {
                 // Extract the value for the key called "webUrl"
                 String url = currentArticle.getString("webUrl");
 
-                // For a given article, extract the JSONArray associated with the
-                // key called "tags", which represents a list of all properties
-                // for that author.
-                JSONArray jsonArrayTags = currentArticle.getJSONArray("tags");
-
-                // Extract the the JSONObject index of the first array item
-                JSONObject jsonObjectTags = jsonArrayTags.getJSONObject(0);
-                    // Extract the value for the key called "webTitle" from withing the
-                    // key called "tags".
-                    String authorName = jsonObjectTags.getString("webTitle");
+                // For a given article, extract the JSONObject associated with the
+                // key called "fields", which holds the "byline" key.
+                JSONObject jsonObjectFields = currentArticle.getJSONObject("fields");
+                    // Extract Author name value from key named "byline".
+                    String authorName = jsonObjectFields.getString("byline");
 
                 // Create a new {@link Article} object with the magnitude, location, time,
                 // and url from the JSON response.
