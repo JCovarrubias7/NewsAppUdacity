@@ -172,10 +172,13 @@ public final class QueryUtils {
                 // Extract the value for the key called "webUrl"
                 String url = currentArticle.getString("webUrl");
 
-                // For a given article, extract the JSONObject associated with the
+                // For a given article, extract the JSONArray associated with the
                 // key called "tags", which represents a list of all properties
                 // for that author.
-                JSONObject jsonObjectTags = currentArticle.getJSONObject("tags");
+                JSONArray jsonArrayTags = currentArticle.getJSONArray("tags");
+
+                // Extract the the JSONObject index of the first array item
+                JSONObject jsonObjectTags = jsonArrayTags.getJSONObject(0);
                     // Extract the value for the key called "webTitle" from withing the
                     // key called "tags".
                     String authorName = jsonObjectTags.getString("webTitle");
