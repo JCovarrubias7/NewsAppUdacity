@@ -3,4 +3,12 @@
 
     <string name="no_articles">No articles found.</string>
     <string name="no_connectivity">No Internet.</string>
+
+    // news_list_item.xml
+    <string name="title_example_text">This is going to be the article\'s title that will not
+        exceed 2 lines</string>
+    <string name="author_example_text">John Wayne (The name of the author)</string>
+    <string name="section_example_text">Sport</string>
+    <string name="date_example_text">2010-08-23</string>
+
 </resources>

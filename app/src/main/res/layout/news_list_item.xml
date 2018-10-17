@@ -4,10 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="?android:attr/listPreferredItemHeight"
     android:orientation="horizontal"
-    android:paddingStart="16dp"
-    android:paddingLeft="16dp"
-    android:paddingEnd="16dp"
-    android:paddingRight="16dp">
+    android:paddingStart="@dimen/parent_layout_padding_left"
+    android:paddingLeft="@dimen/parent_layout_padding_left"
+    android:paddingEnd="@dimen/parent_layout_padding_right"
+    android:paddingRight="@dimen/parent_layout_padding_right">
 
 
     <RelativeLayout
@@ -23,8 +23,8 @@
             android:layout_height="wrap_content"
             android:maxLines="2"
             android:textColor="@color/textColorArticleTitle"
-            android:textSize="14sp"
-            tools:text="This is going to be the articles title that will not exceed 2 lines" />
+            android:textSize="@dimen/title_text_size"
+            tools:text="@string/title_example_text" />
 
         <TextView
             android:id="@+id/author_name"
@@ -35,8 +35,8 @@
             android:gravity="center"
             android:textAllCaps="true"
             android:textColor="@color/textColorArticleDetails"
-            android:textSize="12sp"
-            tools:text="John Wayne (The name of the author)" />
+            android:textSize="@dimen/author_section_text_size"
+            tools:text="@string/author_example_text" />
 
         <TextView
             android:id="@+id/section_name"
@@ -47,8 +47,8 @@
             android:layout_gravity="end"
             android:gravity="end"
             android:textColor="@color/textColorArticleDetails"
-            android:textSize="12sp"
-            tools:text="NFL" />
+            android:textSize="@dimen/author_section_text_size"
+            tools:text="@string/section_example_text" />
 
     </RelativeLayout>
 
@@ -57,11 +57,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="top"
-        android:paddingTop="8dp"
-        android:paddingLeft="8dp"
+        android:paddingStart="@dimen/date_padding"
+        android:paddingLeft="@dimen/date_padding"
+        android:paddingTop="@dimen/date_padding"
+        android:paddingRight="@dimen/date_padding"
         android:textColor="@color/textColorArticleDetails"
-        android:textSize="12sp"
-        tools:text="Mar 6, 2010" />
-
+        android:textSize="@dimen/date_text_size"
+        tools:text="@string/date_example_text" />
 
 </LinearLayout>

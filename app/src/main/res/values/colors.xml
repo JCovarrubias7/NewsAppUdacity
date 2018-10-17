@@ -5,7 +5,7 @@
     <color name="colorAccent">#a0ffe4</color>
 
     <!-- Text color for the details of the article in the list item -->
-    <color name="textColorArticleDetails">#B4BAC0</color>
+    <color name="textColorArticleDetails">#92999f</color>
 
     <!-- Text color for the title of the article in the list item -->
     <color name="textColorArticleTitle">#2B3D4D</color>
