@@ -165,6 +165,8 @@ public final class QueryUtils {
                 // Get a single article at position i within the list of articles
                 JSONObject currentArticle = articleArray.getJSONObject(i);
 
+                // Extract the value from the key called "sectionName"
+                String section = currentArticle.getString("sectionName");
                 // Extract the value from the key called "webTitle"
                 String title = currentArticle.getString("webTitle");
                 // Extract the value for the key called "webPublicationDate"
@@ -180,7 +182,7 @@ public final class QueryUtils {
 
                 // Create a new {@link Article} object with the magnitude, location, time,
                 // and url from the JSON response.
-                Article article = new Article(authorName, title, date, url);
+                Article article = new Article(authorName, section, title, date, url);
 
                 // Add the new {@link Article} to the list of articles.
                 articles.add(article);

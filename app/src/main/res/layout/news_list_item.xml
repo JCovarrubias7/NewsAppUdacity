@@ -10,19 +10,27 @@
     android:paddingRight="16dp">
 
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_weight="1"
         android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/article_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="@color/textColorArticleTitle"
+            android:textSize="14sp"
+            tools:text="This is going to be the articles title that will not exceed 2 lines" />
 
         <TextView
             android:id="@+id/author_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/article_title"
             android:layout_gravity="center_vertical"
             android:gravity="center"
             android:textAllCaps="true"
@@ -31,21 +39,26 @@
             tools:text="John Wayne (The name of the author)" />
 
         <TextView
-            android:id="@+id/article_title"
+            android:id="@+id/section_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:maxLines="2"
-            android:textColor="@color/textColorArticleTitle"
+            android:layout_below="@id/article_title"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:textColor="@color/textColorArticleDetails"
             android:textSize="12sp"
-            tools:text="This is going to be the articles title that will not exceed 2 lines" />
+            tools:text="NFL" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/article_published_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="end"
+        android:layout_gravity="top"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
         android:textColor="@color/textColorArticleDetails"
         android:textSize="12sp"
         tools:text="Mar 6, 2010" />

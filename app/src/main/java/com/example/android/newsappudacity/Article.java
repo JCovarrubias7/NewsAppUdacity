@@ -6,9 +6,14 @@ package com.example.android.newsappudacity;
 
 public class Article {
     /**
-     * Article section name
+     * Article author name
      */
     private String mAuthorName;
+
+    /**
+     * Article section name
+     */
+    private String mSectionName;
 
     /**
      * Article title
@@ -28,13 +33,15 @@ public class Article {
     /**
      * Constructs a new Article Object
      *
-     * @param author is the section that the article falls under
+     * @param author is the author of the article
+     * @param section is the section that the article falls under
      * @param title   is the articles title
      * @param date    is the date the article was published
      * @param url     is the URL location of the article
      */
-    public Article(String author, String title, String date, String url) {
+    public Article(String author, String section, String title, String date, String url) {
         mAuthorName = author;
+        mSectionName = section;
         mArticleTitle = title;
         mPublishedDate = date;
         mUrl = url;
@@ -45,10 +52,17 @@ public class Article {
      */
 
     /**
-     * Return the section name
+     * Return the author name
      */
     public String getAuthorName() {
         return mAuthorName;
+    }
+
+    /**
+     * Return the section name
+     */
+    public String getSectionNAme() {
+        return mSectionName;
     }
 
     /**

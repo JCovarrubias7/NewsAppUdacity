@@ -53,8 +53,13 @@ public class ArticleAdapter extends ArrayAdapter<Article> {
 
         // Find the TextView with the ID author_name
         TextView authorName = (TextView) listItemView.findViewById(R.id.author_name);
-        // Display the section_name of the current article in that TextView
+        // Display the author_name of the current article in that TextView
         authorName.setText(currentArticle.getAuthorName());
+
+        // Find the TextView with the ID section_name
+        TextView sectionName = (TextView) listItemView.findViewById(R.id.section_name);
+        // Display the section_name of the current article in that TextView
+        sectionName.setText(currentArticle.getSectionNAme());
 
         // Find the TextView with the ID article_title
         TextView articleTitle = (TextView) listItemView.findViewById(R.id.article_title);
