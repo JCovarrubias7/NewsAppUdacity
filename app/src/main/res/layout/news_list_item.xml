@@ -26,6 +26,7 @@
             android:layout_gravity="center_vertical"
             android:gravity="center"
             android:textAllCaps="true"
+            android:textColor="@color/textColorArticleDetails"
             android:textSize="12sp"
             tools:text="John Wayne (The name of the author)" />
 
@@ -34,6 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:maxLines="2"
+            android:textColor="@color/textColorArticleTitle"
             android:textSize="12sp"
             tools:text="This is going to be the articles title that will not exceed 2 lines" />
 
@@ -44,6 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
+        android:textColor="@color/textColorArticleDetails"
         android:textSize="12sp"
         tools:text="Mar 6, 2010" />
 
