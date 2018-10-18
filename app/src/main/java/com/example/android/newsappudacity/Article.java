@@ -33,7 +33,7 @@ public class Article {
     /**
      * Constructs a new Article Object
      *
-     * @param author is the author of the article
+     * @param author  is the author of the article
      * @param section is the section that the article falls under
      * @param title   is the articles title
      * @param date    is the date the article was published

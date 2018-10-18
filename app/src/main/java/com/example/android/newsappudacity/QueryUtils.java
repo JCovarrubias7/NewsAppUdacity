@@ -23,7 +23,9 @@ import java.util.List;
  */
 public final class QueryUtils {
 
-    /** Tag for the log messages */
+    /**
+     * Tag for the log messages
+     */
     private static final String LOG_TAG = QueryUtils.class.getSimpleName();
 
     /**
@@ -177,8 +179,8 @@ public final class QueryUtils {
                 // For a given article, extract the JSONObject associated with the
                 // key called "fields", which holds the "byline" key.
                 JSONObject jsonObjectFields = currentArticle.getJSONObject("fields");
-                    // Extract Author name value from key named "byline".
-                    String authorName = jsonObjectFields.getString("byline");
+                // Extract Author name value from key named "byline".
+                String authorName = jsonObjectFields.getString("byline");
 
                 // Create a new {@link Article} object with the magnitude, location, time,
                 // and url from the JSON response.
