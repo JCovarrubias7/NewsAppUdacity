@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity
      */
     private static final String GUARDIAN_REQUEST_URL =
             "https://content.guardianapis.com/search?";
-    //"q=NFL&from-date=2018-01-01&show-fields=all&api-key=test";
 
     /**
      * Constant value for the earthquake loader ID. We can choose any integer.
@@ -146,6 +145,7 @@ public class MainActivity extends AppCompatActivity
         uriBuilder.appendQueryParameter("api-key", "test");
 
         // Return the complete URI
+        // "https://content.guardianapis.com/search?q=NFL&from-date=2018-01-01&show-fields=all&order-by=relevance&api-key=test"
         return new ArticleLoader(this, uriBuilder.toString());
     }
 
