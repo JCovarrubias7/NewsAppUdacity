@@ -33,6 +33,7 @@
             android:layout_below="@id/article_title"
             android:layout_gravity="center_vertical"
             android:gravity="center"
+            android:maxLength="25"
             android:textAllCaps="true"
             android:textColor="@color/textColorArticleDetails"
             android:textSize="@dimen/author_section_text_size"
