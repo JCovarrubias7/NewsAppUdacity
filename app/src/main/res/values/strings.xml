@@ -4,6 +4,21 @@
     <string name="no_articles">No articles found.</string>
     <string name="no_connectivity">No Internet.</string>
 
+    <!-- Main Activity -->
+    <!-- URI Strings -->
+    <string name="uri_builder_parameter_q">q</string>
+
+    <string name="uri_builder_parameter_date">from-date</string>
+    <string name="uri_builder_parameter_date_value">2018-01-01</string>
+
+    <string name="uri_builder_parameter_fields">show-fields</string>
+    <string name="uri_builder_parameter_fields_value">all</string>
+
+    <string name="uri_builder_parameter_order">order-by</string>
+
+    <string name="uri_builder_parameter_key">api-key</string>
+    <string name="uri_builder_parameter_key_value">test</string>
+
     <!-- news_list_item.xml -->
     <string name="title_example_text">This is going to be the article\'s title that will not
         exceed 2 lines</string>

@@ -26,6 +26,18 @@ public class MainActivity extends AppCompatActivity
         implements LoaderCallbacks<List<Article>> {
 
     /**
+     * URI Strings
+     */
+    private final String Q_PARAMETER = MyApp.getContext().getResources().getString(R.string.uri_builder_parameter_q);
+    private final String DATE_PARAMETER = MyApp.getContext().getResources().getString(R.string.uri_builder_parameter_date);
+    private final String DATE_VALUE = MyApp.getContext().getResources().getString(R.string.uri_builder_parameter_date_value);
+    private final String FIELD_PARAMETER = MyApp.getContext().getResources().getString(R.string.uri_builder_parameter_fields);
+    private final String FIELD_VALUE = MyApp.getContext().getResources().getString(R.string.uri_builder_parameter_fields_value);
+    private final String ORDER_PARAMETER = MyApp.getContext().getResources().getString(R.string.uri_builder_parameter_order);
+    private final String KEY_PARAMETER = MyApp.getContext().getResources().getString(R.string.uri_builder_parameter_key);
+    private final String KEY_VALUE = MyApp.getContext().getResources().getString(R.string.uri_builder_parameter_key_value);
+
+    /**
      * URL for earthquake data from the USGS dataset
      */
     private static final String GUARDIAN_REQUEST_URL =
@@ -138,11 +150,11 @@ public class MainActivity extends AppCompatActivity
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
         // Append query parameter and its value. For example, the 'show-fields=all'
-        uriBuilder.appendQueryParameter("q", sportLeague);
-        uriBuilder.appendQueryParameter("from-date", "2018-01-01");
-        uriBuilder.appendQueryParameter("show-fields", "all");
-        uriBuilder.appendQueryParameter("order-by", orderBy);
-        uriBuilder.appendQueryParameter("api-key", "test");
+        uriBuilder.appendQueryParameter(Q_PARAMETER, sportLeague);
+        uriBuilder.appendQueryParameter(DATE_PARAMETER, DATE_VALUE);
+        uriBuilder.appendQueryParameter(FIELD_PARAMETER, FIELD_VALUE);
+        uriBuilder.appendQueryParameter(ORDER_PARAMETER, orderBy);
+        uriBuilder.appendQueryParameter(KEY_PARAMETER, KEY_VALUE);
 
         // Return the complete URI
         // "https://content.guardianapis.com/search?q=NFL&from-date=2018-01-01&show-fields=all&order-by=relevance&api-key=test"
