@@ -3,11 +3,11 @@
     android:title="@string/settings_title">
 
     <ListPreference
-        android:defaultValue="@string/settings_sport_league_default"
-        android:entries="@array/settings_sports_league_by_labels"
-        android:entryValues="@array/settings_sports_league_by_values"
-        android:key="@string/settings_sport_league_key"
-        android:title="@string/settings_sport_league_label" />
+        android:defaultValue="@string/settings_sport_default"
+        android:entries="@array/settings_sports_by_labels"
+        android:entryValues="@array/settings_sports_by_values"
+        android:key="@string/settings_sport_key"
+        android:title="@string/settings_sport_label" />
     <ListPreference
         android:defaultValue="@string/settings_order_by_default"
         android:entries="@array/settings_order_by_labels"

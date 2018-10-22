@@ -28,12 +28,12 @@ public class MainActivity extends AppCompatActivity
     /**
      * URI Strings
      */
-    private final String Q_PARAMETER = MyApp.getContext().getResources().getString(R.string.uri_builder_parameter_q);
     private final String DATE_PARAMETER = MyApp.getContext().getResources().getString(R.string.uri_builder_parameter_date);
     private final String DATE_VALUE = MyApp.getContext().getResources().getString(R.string.uri_builder_parameter_date_value);
+    private final String ORDER_PARAMETER = MyApp.getContext().getResources().getString(R.string.uri_builder_parameter_order);
     private final String FIELD_PARAMETER = MyApp.getContext().getResources().getString(R.string.uri_builder_parameter_fields);
     private final String FIELD_VALUE = MyApp.getContext().getResources().getString(R.string.uri_builder_parameter_fields_value);
-    private final String ORDER_PARAMETER = MyApp.getContext().getResources().getString(R.string.uri_builder_parameter_order);
+    private final String Q_PARAMETER = MyApp.getContext().getResources().getString(R.string.uri_builder_parameter_q);
     private final String KEY_PARAMETER = MyApp.getContext().getResources().getString(R.string.uri_builder_parameter_key);
     private final String KEY_VALUE = MyApp.getContext().getResources().getString(R.string.uri_builder_parameter_key_value);
 
@@ -135,9 +135,9 @@ public class MainActivity extends AppCompatActivity
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
         // getString retrieves a String value from the preferences. The second parameter
         // is the default value for this preference.
-        String sportLeague = sharedPrefs.getString(
-                getString(R.string.settings_sport_league_key),
-                getString(R.string.settings_sport_league_default));
+        String sport = sharedPrefs.getString(
+                getString(R.string.settings_sport_key),
+                getString(R.string.settings_sport_default));
 
         String orderBy = sharedPrefs.getString(
                 getString(R.string.settings_order_by_key),
@@ -150,14 +150,14 @@ public class MainActivity extends AppCompatActivity
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
         // Append query parameter and its value. For example, the 'show-fields=all'
-        uriBuilder.appendQueryParameter(Q_PARAMETER, sportLeague);
         uriBuilder.appendQueryParameter(DATE_PARAMETER, DATE_VALUE);
-        uriBuilder.appendQueryParameter(FIELD_PARAMETER, FIELD_VALUE);
         uriBuilder.appendQueryParameter(ORDER_PARAMETER, orderBy);
+        uriBuilder.appendQueryParameter(FIELD_PARAMETER, FIELD_VALUE);
+        uriBuilder.appendQueryParameter(Q_PARAMETER, sport);
         uriBuilder.appendQueryParameter(KEY_PARAMETER, KEY_VALUE);
 
         // Return the complete URI
-        // "https://content.guardianapis.com/search?q=NFL&from-date=2018-01-01&show-fields=all&order-by=relevance&api-key=test"
+        // "https://content.guardianapis.com/search?from-date=2018-01-01&order-by=relevance&show-fields=all&q=football&api-key=test"
         return new ArticleLoader(this, uriBuilder.toString());
     }
 

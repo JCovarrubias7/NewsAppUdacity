@@ -32,25 +32,25 @@
 
     <!-- Sport Menu Settings -->
     <!-- Strings for Sports Leagues -->
-    <string name="settings_sport_league_label">Sport League</string>
-    <string name="settings_sport_league_key" translatable="false">sport_league</string>
-    <string name="settings_sport_league_default" translatable="false">@string/settings_sports_league_nfl_value</string>
+    <string name="settings_sport_label">Sport</string>
+    <string name="settings_sport_key" translatable="false">sport</string>
+    <string name="settings_sport_default" translatable="false">@string/settings_sport_football_value</string>
 
-    <!-- Label for sports league NFL option [CHAR LIMIT=20] -->
-    <string name="settings_sports_league_nfl_label">NFL</string>
-    <string name="settings_sports_league_nfl_value" translatable="false">NFL</string>
+    <!-- Label for sport football option [CHAR LIMIT=20] -->
+    <string name="settings_sport_football_label">Football</string>
+    <string name="settings_sport_football_value" translatable="false">football</string>
 
-    <!-- Label for sports league NBA option [CHAR LIMIT=20] -->
-    <string name="settings_sports_league_nba_label">NBA</string>
-    <string name="settings_sports_league_nba_value" translatable="false">NBA</string>
+    <!-- Label for sport basketball option [CHAR LIMIT=20] -->
+    <string name="settings_sport_basketball_label">Basketball</string>
+    <string name="settings_sport_basketball_value" translatable="false">basketball</string>
 
-    <!-- Label for sports league MLB option [CHAR LIMIT=20] -->
-    <string name="settings_sports_league_mlb_label">MLB</string>
-    <string name="settings_sports_league_mlb_value" translatable="false">MLB</string>
+    <!-- Label for sport baseball option [CHAR LIMIT=20] -->
+    <string name="settings_sport_baseball_label">Baseball</string>
+    <string name="settings_sport_baseball_value" translatable="false">baseball</string>
 
-    <!-- Label for sports league MLB option [CHAR LIMIT=20] -->
-    <string name="settings_sports_league_nhl_label">NHL</string>
-    <string name="settings_sports_league_nhl_value" translatable="false">NHL</string>
+    <!-- Label for sport hockey option [CHAR LIMIT=20] -->
+    <string name="settings_sport_hockey_label">Hockey</string>
+    <string name="settings_sport_hockey_value" translatable="false">hockey</string>
 
 
     <!-- Strings For Order-By Preference [CHAR LIMIT = 30} -->

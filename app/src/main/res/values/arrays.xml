@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="settings_sports_league_by_labels">
-        <item>@string/settings_sports_league_nfl_label</item>
-        <item>@string/settings_sports_league_nba_label</item>
-        <item>@string/settings_sports_league_mlb_label</item>
-        <item>@string/settings_sports_league_nhl_label</item>
+    <string-array name="settings_sports_by_labels">
+        <item>@string/settings_sport_football_label</item>
+        <item>@string/settings_sport_basketball_label</item>
+        <item>@string/settings_sport_baseball_label</item>
+        <item>@string/settings_sport_hockey_label</item>
     </string-array>
 
-    <string-array name="settings_sports_league_by_values">
-        <item>@string/settings_sports_league_nfl_value</item>
-        <item>@string/settings_sports_league_nba_value</item>
-        <item>@string/settings_sports_league_mlb_value</item>
-        <item>@string/settings_sports_league_nhl_value</item>
+    <string-array name="settings_sports_by_values">
+        <item>@string/settings_sport_football_value</item>
+        <item>@string/settings_sport_basketball_value</item>
+        <item>@string/settings_sport_baseball_value</item>
+        <item>@string/settings_sport_hockey_value</item>
     </string-array>
 
     <string-array name="settings_order_by_labels">

@@ -24,7 +24,7 @@ public class SettingsActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.settings_main);
 
-            Preference sportLeague = findPreference(getString(R.string.settings_sport_league_key));
+            Preference sportLeague = findPreference(getString(R.string.settings_sport_key));
             bindPreferenceSummaryToValue(sportLeague);
 
             Preference orderBy = findPreference(getString(R.string.settings_order_by_key));
